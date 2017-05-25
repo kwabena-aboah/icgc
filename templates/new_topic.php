@@ -70,14 +70,14 @@ $nb_new_pm = $nb_new_pm['nb_new_pm'];
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="<?php echo $url_home; ?>">Home</a>
+        <li class="active"><a href="<?php echo $url_home; ?>" style="color:#fcf8e3;">Home</a>
         </li>
-        <li><a href="users.php">All Users</a></li>
+        <li><a href="users.php" style="color:#fcf8e3;">All Users</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="list_pm.php">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
-        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
-        <li><a href="login.php">(Logout)</a></li>
+        <li><a href="list_pm.php" style="color:#fcf8e3;">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
+        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>" style="color:#fcf8e3;"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+        <li><a href="login.php" style="color:#fcf8e3;">(Logout)</a></li>
       </ul>
        <div class="clean"></div>
     </div><!-- /.navbar-collapse -->
@@ -101,7 +101,7 @@ if(isset($_POST['message'], $_POST['title']) and $_POST['message']!='' and $_POS
 	{
 	?>
 	<div class="message">The topic have successfully been created.<br />
-	<a href="list_topics.php?parent=<?php echo $id; ?>">Go to the forum</a></div>
+	<a href="list_topics.php?parent=<?php echo $id; ?>">Go to the topic</a></div>
 	<?php
 	}
 	else

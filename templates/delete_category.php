@@ -70,15 +70,15 @@ $nb_new_pm = $nb_new_pm['nb_new_pm'];
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="<?php echo $url_home; ?>">Home</a>
+        <li class="active"><a href="<?php echo $url_home; ?>" style="color:#fcf8e3;">Home</a>
         </li>
-        <li><a href="list_topics.php?parent=<?php echo $dn1['parent']; ?>"><?php echo htmlentities($dn1['name'], ENT_QUOTES, 'UTF-8'); ?></a></li>
-        <li><a href="read_topic.php?id=<?php echo $id; ?>"><?php echo htmlentities($dn1['title'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+        <li><a href="list_topics.php?parent=<?php echo $dn1['parent']; ?>" style="color:#fcf8e3;"><?php echo htmlentities($dn1['name'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+        <li><a href="read_topic.php?id=<?php echo $id; ?>" style="color:#fcf8e3;"><?php echo htmlentities($dn1['title'], ENT_QUOTES, 'UTF-8'); ?></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="list_pm.php">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
-        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
-        <li><a href="login.php">(Logout)</a></li>
+        <li><a href="list_pm.php" style="color:#fcf8e3;">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
+        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>" style="color:#fcf8e3;"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+        <li><a href="login.php" style="color:#fcf8e3;">(Logout)</a></li>
       </ul>
        <div class="clean"></div>
     </div><!-- /.navbar-collapse -->
@@ -91,8 +91,8 @@ if(isset($_POST['confirm']))
 	if(mysql_query('delete from categories where id="'.$id.'"') and mysql_query('delete from topics where parent="'.$id.'"') and mysql_query('update categories set position=position-1 where position>"'.$dn1['position'].'"'))
 	{
 	?>
-	<div class="message">The category and it topics have successfully been deleted.<br />
-	<a href="<?php echo $url_home; ?>">Go to the forum index</a></div>
+	<div class="message">The Group and it topics have successfully been deleted.<br />
+	<a href="<?php echo $url_home; ?>">Go to Group</a></div>
 	<?php
 	}
 	else
@@ -108,7 +108,7 @@ else
 		<div class="row">
 			<div class="col-md-11 contact-form wow animated fadeInLeft">
 			    <form action="delete_category.php?id=<?php echo $id; ?>" method="post" style="padding-left: 40px; padding-right: 40px; margin-right: 10px; margin-left: 10px;">
-					Are you sure you want to delete this category and all it topics?
+					Are you sure you want to delete this group and all it topics?
 				    <input type="hidden" name="confirm" value="true" class="form-control" />
 				    <input type="submit" value="Yes" class="btn btn-success"/> <input type="button" value="No" onclick="javascript:history.go(-1);" class="btn btn-danger"/>
 				</form>

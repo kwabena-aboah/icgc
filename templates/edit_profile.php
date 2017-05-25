@@ -65,13 +65,13 @@ $nb_new_pm = $nb_new_pm['nb_new_pm'];
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="<?php echo $url_home; ?>">Forum Index</a>
+        <li class="active"><a href="<?php echo $url_home; ?>" style="color:#fcf8e3;">Forum Index</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="list_pm.php">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
-        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>         
-        <li><a href="register.php">Register</a></li>
+        <li><a href="list_pm.php" style="color:#fcf8e3;">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
+        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>" style="color:#fcf8e3;"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>         
+        <li><a href="register.php" style="color:#fcf8e3;">Register</a></li>
       </ul>
        <div class="clean"></div>
     </div><!-- /.navbar-collapse -->

@@ -60,13 +60,13 @@ include('config.php');
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="<?php echo $url_home; ?>">Home</a>
+        <li class="active"><a href="<?php echo $url_home; ?>" style="color:#fcf8e3;">Home</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="list_pm.php">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
-        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
-        <li><a href="login.php">(Logout)</a></li>
+        <li><a href="list_pm.php" style="color:#fcf8e3;">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
+        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>" style="color:#fcf8e3;"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+        <li><a href="login.php" style="color:#fcf8e3;">(Logout)</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -102,13 +102,13 @@ else
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="<?php echo $url_home; ?>">Home</a>
+        <li class="active"><a href="<?php echo $url_home; ?>" style="color:#fcf8e3;">Home</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="list_pm.php">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
-        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
-        <li><a href="login.php">(Logout)</a></li>
+        <li><a href="list_pm.php" style="color:#fcf8e3;">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
+        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>" style="color:#fcf8e3;"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+        <li><a href="login.php" style="color: #fcf8e3;">(Logout)</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -120,14 +120,14 @@ if(isset($_SESSION['username']) and $_SESSION['username']==$admin)
 {
 ?>
     <div class="container">
-    <a href="new_category.php" class="btn btn-success" style="background: #004f2f;">New Category</a>
+    <a href="new_category.php" class="btn btn-success" style="background: #004f2f;">New Group</a>
 <?php
 }
 ?>
 <table class="table">
 <thead>
     <tr>
-        <th class="forum_cat">Category</th>
+        <th class="forum_cat">Group</th>
         <th class="forum_ntop">Topics</th>
         <th class="forum_nrep">Replies</th>
 <?php
@@ -156,10 +156,10 @@ while($dnn1 = mysql_fetch_array($dn1))
 if(isset($_SESSION['username']) and $_SESSION['username']==$admin)
 {
 ?>
-        <td><a href="delete_category.php?id=<?php echo $dnn1['id']; ?>" class="fa fa-minus-circle" style="background: red; color: white; size:20px; font-size: 20px;">Delete</a>
+        <td><a href="delete_category.php?id=<?php echo $dnn1['id']; ?>" class="fa fa-minus-circle" style="background: #d0524f; color: white; size:20px; font-size: 20px;">Delete</a>
         <?php if($dnn1['position']>1){ ?><a href="move_category.php?action=up&id=<?php echo $dnn1['id']; ?>" class="glyphicon glyphicon-move"></a><?php } ?>
         <?php if($dnn1['position']<$nb_cats){ ?><a href="move_category.php?action=down&id=<?php echo $dnn1['id']; ?>" class="glyphicon glyphicon-move"></a><?php } ?>
-        <a href="edit_category.php?id=<?php echo $dnn1['id']; ?>" class="fa fa-plus-circle" style="background: green; color: white; size:20px; font-size: 20px;">Edit</a></td>
+        <a href="edit_category.php?id=<?php echo $dnn1['id']; ?>" class="fa fa-plus-circle" style="background: #004f2f; color: white; size:20px; font-size: 20px;">Edit</a></td>
 <?php
 }
 ?>
@@ -174,7 +174,7 @@ if(isset($_SESSION['username']) and $_SESSION['username']==$admin)
 if(isset($_SESSION['username']) and $_SESSION['username']==$admin)
 {
 ?>
-    <a href="new_category.php" class="btn btn-success" style="background: #004f2f;">New Category</a>
+    <!-- <a href="new_category.php" class="btn btn-success" style="background: #004f2f;">New Category</a> -->
 <?php
 }
 if(!isset($_SESSION['username']))

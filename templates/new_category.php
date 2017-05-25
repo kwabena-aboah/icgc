@@ -62,13 +62,13 @@ if(isset($_SESSION['username']) and $_SESSION['username']==$admin)
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="<?php echo $url_home; ?>">Home</a>
+        <li class="active"><a href="<?php echo $url_home; ?>" style="color:#fcf8e3;">Home</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="list_pm.php">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
-        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
-        <li><a href="login.php">(Logout)</a></li>
+        <li><a href="list_pm.php" style="color:#fcf8e3;">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
+        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>" style="color:#fcf8e3;"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+        <li><a href="login.php" style="color:#fcf8e3;">(Logout)</a></li>
       </ul>
        <div class="clean"></div>
     </div><!-- /.navbar-collapse -->
@@ -96,8 +96,8 @@ if(isset($_POST['name'], $_POST['description']) and $_POST['name']!='')
 	if(mysql_query('insert into categories (id, name, description, position) select ifnull(max(id), 0)+1, "'.$name.'", "'.$description.'", count(id)+1 from categories'))
 	{
 	?>
-	<div class="message">The category have successfully been created.<br/>
-	<a href="<?php echo $url_home; ?>">Go to the forum index</a></div>
+	<div class="message">The Group have successfully been created.<br/>
+	<a href="<?php echo $url_home; ?>">Go to Group</a></div>
 	<?php
 	}
 	else
@@ -114,7 +114,7 @@ else
         <div class="row">
             <div class="col-md-11 contact-form wow animated fadeInLeft">
                 <form action="new_category.php" method="post" style="padding-left: 40px; padding-right: 40px; margin-right: 10px; margin-left: 10px;">
-                	<h1 class="well">New Category Page</h1>
+                	<h1 class="well">New Group Page</h1>
                     <div class="input-field">
                         <input type="text" name="name" id="name" class="form-control" placeholder="Category Name" required>
                     </div>

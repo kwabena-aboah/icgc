@@ -66,14 +66,14 @@ $nb_new_pm = $nb_new_pm['nb_new_pm'];
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="<?php echo $url_home; ?>">Home</a>
+        <li class="active"><a href="<?php echo $url_home; ?>" style="color:#fcf8e3;">Home</a>
         </li>
-        <li><a href="users.php">All Users</a></li>
+        <li><a href="users.php" style="color:#fcf8e3;">All Users</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="list_pm.php">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
-        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
-        <li><a href="login.php">(Logout)</a></li>
+        <li><a href="list_pm.php" style="color:#fcf8e3;">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
+        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>" style="color:#fcf8e3;"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+        <li><a href="login.php" style="color:#fcf8e3;">(Logout)</a></li>
       </ul>
        <div class="clean"></div>
     </div><!-- /.navbar-collapse -->
@@ -98,13 +98,13 @@ else
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="<?php echo $url_home; ?>">Home</a>
+        <li class="active"><a href="<?php echo $url_home; ?>" style="color:#fcf8e3;">Home</a>
         </li>
-        <li><a href="users.php">All Users</a></li>
+        <li><a href="users.php" style="color:#fcf8e3;">All Users</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="register.php">Sign Up</a></li>
-        <li><a href="login.php">Login</a></li>
+        <li><a href="register.php" style="color:#fcf8e3;">Sign Up</a></li>
+        <li><a href="login.php" style="color:#fcf8e3;">Login</a></li>
       </ul>
        <div class="clean"></div>
     </div><!-- /.navbar-collapse -->
@@ -135,14 +135,14 @@ if($_SESSION['userid']==$id)
     <thead>
 	<tr>
     	<td><?php
-if($dnn['avatar']!='')
-{
-	echo '<img src="'.htmlentities($dnn['avatar'], ENT_QUOTES, 'UTF-8').'" alt="Avatar" style="max-width:100px;max-height:100px;" />';
-}
-else
-{
-	echo 'This user has no avatar.';
-}
+// if($dnn['avatar']!='')
+// {
+	
+// }
+// else
+// {
+// 	echo 'This user has no avatar.';
+// }
 ?></td>
     	<td><h1><?php echo htmlentities($dnn['username'], ENT_QUOTES, 'UTF-8'); ?></h1>
     	Email: <?php echo htmlentities($dnn['email'], ENT_QUOTES, 'UTF-8'); ?><br />

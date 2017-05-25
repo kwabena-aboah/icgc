@@ -51,8 +51,8 @@ if(isset($_SESSION['username']))
         	<a href="<?php echo $url_home; ?>"><img src="../images/icgc2.png" alt="Forum" /><span style="color: #004f2f; border-color: #b0931b;font-weight: bold; font-size:30px;">INTERNATIONAL CENTRAL GOSPLE CHURCH</span></a>
 	    </div>
 	    <div class="jumboton wow animated fadeInLeft">
-			<div class="message wow animated fadeInLeft">You have successfully been logged out.<br />
-			<a href="../index.php" class="wow animated fadeInLeft">Home</a></div>
+			<div class="message wow animated fadeInLeft" style="padding-left: 30%; padding-right: 30%;">You have successfully been logged out.<br />
+			<a href="../index.php" class="wow animated fadeInLeft" style="color: #004f2f; position: relative; padding-left: 50%; padding-right: 50%; font-size: 20px;">Home</a></div>
 		</div>
 <?php
 }
@@ -131,15 +131,15 @@ else
 			<span style="color: #004f2f; border-color: #b0931b;font-weight: bold; font-size:30px;">INTERNATIONAL CENTRAL GOSPLE CHURCH</span></a>
 		</div>
 		<div class="jumboton wow animated fadeInLeft">
-			<div class="message">You have successfully been logged.<br/>
-			<a href="<?php echo $url_home; ?>">Yay!!</a></div>
+			<div class="message" style="padding-left: 30%; padding-right: 30%;">You have successfully been logged.<br/>
+			<a href="<?php echo $url_home; ?>" style="color: #004f2f; position: relative; padding-left: 50%; padding-right: 50%; font-size: 20px;">Welcome</a></div>
 		</div>
 <?php
 		}
 		else
 		{
 			$form = true;
-			$message = 'The username or password you entered are not good.';
+			$message = 'The username or password you entered is invalid.';
 		}
 	}
 	else
@@ -218,13 +218,13 @@ $nb_new_pm = $nb_new_pm['nb_new_pm'];
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="../index.php">Forum Index</a>
+        <li class="active"><a href="../index.php" style="color:#fcf8e3;">Home</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <!-- <li><a href="list_pm.php">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
         <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li> -->
-        <li><a href="register.php">Register</a></li>
+        <li><a href="register.php" style="color:#fcf8e3;">Register</a></li>
       </ul>
        <div class="clean"></div>
     </div><!-- /.navbar-collapse -->

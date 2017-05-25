@@ -72,13 +72,13 @@ if($dn1['nb1']>0)
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                   <ul class="nav navbar-nav">
-                    <li><a href="list_topics.php?parent=<?php echo $dn1['parent']; ?>"><?php echo htmlentities($dn1['name'], ENT_QUOTES, 'UTF-8'); ?>List Topics</a></li>
-                    <li><a href="read_topic.php?id=<?php echo $id; ?>"><?php echo htmlentities($dn1['title'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+                    <li><a href="list_topics.php?parent=<?php echo $dn1['parent']; ?>" style="color:#fcf8e3;"><?php echo htmlentities($dn1['name'], ENT_QUOTES, 'UTF-8'); ?>List Topics</a></li>
+                    <li><a href="read_topic.php?id=<?php echo $id; ?>" style="color:#fcf8e3;"><?php echo htmlentities($dn1['title'], ENT_QUOTES, 'UTF-8'); ?></a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a href="list_pm.php">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
-                    <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
-                    <li><a href="login.php">Login</a></li>
+                    <li><a href="list_pm.php" style="color:#fcf8e3;">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
+                    <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>" style="color:#fcf8e3;"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+                    <li><a href="login.php" style="color:#fcf8e3;">Login</a></li>
                   </ul>
                    <div class="clean"></div>
                 </div><!-- /.navbar-collapse -->
@@ -102,13 +102,13 @@ if($dn1['nb1']>0)
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                   <ul class="nav navbar-nav">
-                    <li><a href="list_topics.php?parent=<?php echo $dn1['parent']; ?>"><?php echo htmlentities($dn1['name'], ENT_QUOTES, 'UTF-8'); ?>List Topics</a></li>
+                    <li><a href="list_topics.php?parent=<?php echo $dn1['parent']; ?>" style="color:#fcf8e3;"><?php echo htmlentities($dn1['name'], ENT_QUOTES, 'UTF-8'); ?>List Topics</a></li>
                     <li><a href="read_topic.php?id=<?php echo $id; ?>"><?php echo htmlentities($dn1['title'], ENT_QUOTES, 'UTF-8'); ?></a></li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a href="list_pm.php">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
-                    <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
-                    <li><a href="login.php">Login</a></li>
+                    <li><a href="list_pm.php" style="color:#fcf8e3;">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
+                    <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>" style="color:#fcf8e3;"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+                    <li><a href="login.php" style="color:#fcf8e3;">Login</a></li>
                   </ul>
                    <div class="clean"></div>
                 </div><!-- /.navbar-collapse -->
@@ -147,11 +147,11 @@ if($dn1['nb1']>0)
                 	<td class="author center"><?php
             if($dnn2['avatar']!='')
             {
-            	echo '<img src="'.htmlentities($dnn2['avatar']).'" alt="Image Perso" style="max-width:100px;max-height:100px;" />';
+            	
             }
             ?>
             <br /><a href="profile.php?id=<?php echo $dnn2['authorid']; ?>"><?php echo $dnn2['author']; ?></a></td>
-                	<td class="left"><?php if(isset($_SESSION['username']) and ($_SESSION['username']==$dnn2['author'] or $_SESSION['username']==$admin)){ ?><div class="edit"><a href="edit_message.php?id=<?php echo $id; ?>&id2=<?php echo $dnn2['id2']; ?>"><img src="<?php echo $design; ?>/images/edit.png" alt="Edit" /></a></div><?php } ?><div class="date">Date sent: <?php echo date('Y/m/d H:i:s' ,$dnn2['timestamp']); ?></div>
+                	<td class="left"><?php if(isset($_SESSION['username']) and ($_SESSION['username']==$dnn2['author'] or $_SESSION['username']==$admin)){ ?><div class="edit"><a href="edit_message.php?id=<?php echo $id; ?>&id2=<?php echo $dnn2['id2']; ?>" class="btn btn-success" style="background:#004f2f;">Edit</a></div><?php } ?><div class="date">Date sent: <?php echo date('Y/m/d H:i:s' ,$dnn2['timestamp']); ?></div>
                     <div class="clean"></div>
                 	<?php echo $dnn2['message']; ?></td>
                 </tr>
@@ -163,7 +163,7 @@ if($dn1['nb1']>0)
             if(isset($_SESSION['username']))
             {
             ?>
-            	<a href="new_reply.php?id=<?php echo $id; ?>" class="btn btn-primary" style="background: #004f2f;">Reply</a>
+            	
             <?php
             }
             else

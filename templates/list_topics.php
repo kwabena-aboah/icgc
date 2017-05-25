@@ -75,14 +75,14 @@ $nb_new_pm = $nb_new_pm['nb_new_pm'];
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="<?php echo $url_home; ?>">Home</a>
+        <li class="active"><a href="<?php echo $url_home; ?>" style="color:#fcf8e3;">Home</a>
         </li>
-        <li><a href="list_topics.php?parent=<?php echo $id; ?>"><?php echo htmlentities($dn1['name'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+        <li><a href="list_topics.php?parent=<?php echo $id; ?>" style="color:#fcf8e3;"><?php echo htmlentities($dn1['name'], ENT_QUOTES, 'UTF-8'); ?></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="list_pm.php">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
-        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
-        <li><a href="login.php">(Logout)</a></li>
+        <li><a href="list_pm.php" style="color:#fcf8e3;">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
+        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>" style="color:#fcf8e3;"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+        <li><a href="login.php" style="color:#fcf8e3;">(Logout)</a></li>
       </ul>
        <div class="clean"></div>
     </div><!-- /.navbar-collapse -->
@@ -106,14 +106,14 @@ else
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="<?php echo $url_home; ?>">Home</a>
+        <li class="active"><a href="<?php echo $url_home; ?>" style="color:#fcf8e3;">Home</a>
         </li>
-        <li><a href="list_topics.php?parent=<?php echo $id; ?>"><?php echo htmlentities($dn1['name'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+        <li><a href="list_topics.php?parent=<?php echo $id; ?>" style="color:#fcf8e3;"><?php echo htmlentities($dn1['name'], ENT_QUOTES, 'UTF-8'); ?></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="list_pm.php">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
-        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
-        <li><a href="login.php">(Logout)</a></li>
+        <li><a href="list_pm.php" style="color:#fcf8e3;">Your messages(<?php echo $nb_new_pm; ?>)</a></li>
+        <li><a href="profile.php?id=<?php echo $_SESSION['userid']; ?>" style="color:#fcf8e3;" style="color:#fcf8e3;"><?php echo htmlentities($_SESSION['username'], ENT_QUOTES, 'UTF-8'); ?></a></li>
+        <li><a href="login.php" style="color:#fcf8e3;">(Logout)</a></li>
       </ul>
        <div class="clean"></div>
     </div><!-- /.navbar-collapse -->
@@ -162,7 +162,7 @@ while($dnn2 = mysql_fetch_array($dn2))
 if(isset($_SESSION['username']) and $_SESSION['username']==$admin)
 {
 ?>
-    	<td><a href="delete_topic.php?id=<?php echo $dnn2['id']; ?>" class="fa fa-minus-circle" style="background: red; color: white; size:20px; font-size: 20px;">Delete</a></td>
+    	<td><a href="delete_topic.php?id=<?php echo $dnn2['id']; ?>" class="fa fa-minus-circle" style="background: #d0524f; color: white; size:20px; font-size: 20px;">Delete</a></td>
 <?php
 }
 ?>
@@ -183,7 +183,7 @@ else
 if(isset($_SESSION['username']))
 {
 ?>
-	<a href="new_topic.php?parent=<?php echo $id; ?>" class="btn btn-success" style="background: #004f2f;">New Topic</a>
+
 <?php
 }
 else
