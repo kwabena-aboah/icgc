@@ -111,7 +111,7 @@
                         <li><a href="#body">Home</a></li>
                         <li><a href="#service">About Us</a></li>
                         <li><a href="#portfolio">Media</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
+                        <!-- <li><a href="templates/login.php">Forum</a></li> -->
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -292,7 +292,7 @@
 							<p class="wow animated bounceInRight">The Key Features of our Job</p>
 						</div>
 						
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn">
 							<div class="service-item">
 								<div class="service-icon">
 									<i class="fa fa-home fa-3x"></i>
@@ -303,7 +303,7 @@
 							</div>
 						</div>
 					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
 							<div class="service-item">
 								<div class="service-icon">
 									<i class="fa fa-tasks fa-3x"></i>
@@ -314,7 +314,7 @@
 							</div>
 						</div>
 					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
 							<div class="service-item">
 								<div class="service-icon">
 									<i class="fa fa-clock-o fa-3x"></i>
@@ -324,18 +324,6 @@
 								Through our programs, we trust to make the lives of our people better than before they came to Church...</p>
 							</div>
 						</div>
-					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
-							<div class="service-item">
-								<div class="service-icon">
-									<i class="fa fa-heart fa-3x"></i>
-								</div>
-								
-								<h3>Projects</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>							
-							</div>
-						</div>
-						
 					</div>
 				</div>
 			</section>
@@ -348,79 +336,78 @@
 					
 						<div class="sec-title text-center wow animated fadeInDown">
 							<h2>Media and Gallery</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 						
 
 						<ul class="project-wrapper wow animated fadeInUp">
 							<li class="portfolio-item">
-								<img src="images/portfolio/item.jpg" class="img-responsive" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat">
+								<img src="images/portfolio/1.jpg" class="img-responsive" alt="Around the Church">
 								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+									<h3>Around the Church</h3>
+									<p>The temple of the Lord where He resides. Sunday and weekly fellowships.</p>
 								</figcaption>
 								<ul class="external">
-									<li><a class="fancybox" title="Araund The world" data-fancybox-group="works" href="../images/portfolio/item.jpg"><i class="fa fa-search"></i></a></li>
+									<li><a class="fancybox" title="Around the Church" data-fancybox-group="works" href="../images/portfolio/1.jpg"><i class="fa fa-search"></i></a></li>
 									<li><a href=""><i class="fa fa-link"></i></a></li>
 								</ul>
 							</li>
 							
 							<li class="portfolio-item">
-								<img src="images/portfolio/item2.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+								<img src="images/portfolio/2.jpg" class="img-responsive" alt="Sign from the Lord.">
 								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+									<h3>Sign from the Lord.</h3>
+									<p>Therefore the Lord Himself will give you a sign: the virgin will concieve and give birth to a son, and will call Him Immanuel. <small>Isaiah 7:14</small>. </p>
 								</figcaption>
 								<ul class="external">
-									<li><a class="fancybox" title="Wall street" href="images/slider/banner.jpg" data-fancybox-group="works" ><i class="fa fa-search"></i></a></li>
+									<li><a class="fancybox" title="Sign from the Lord" href="images/portfolio/2.jpg" data-fancybox-group="works" ><i class="fa fa-search"></i></a></li>
 									<li><a href=""><i class="fa fa-link"></i></a></li>
 								</ul>
 							</li>
 							
 							<li class="portfolio-item">
-								<img src="images/portfolio/item3.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+								<img src="images/portfolio/3.jpg" class="img-responsive" alt="Strenght to begin well. ">
 								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+									<h3>Prayer point</h3>
+									<p>Pray for devine help to be able to turn to the Lord. <small>2 Chron 7:14</small>. </p>
 								</figcaption>
 								<ul class="external">
-									<li><a class="fancybox" title="Behind The world" data-fancybox-group="works" href="images/portfolio/item3.jpg"><i class="fa fa-search"></i></a></li>
+									<li><a class="fancybox" title="Prayer point" data-fancybox-group="works" href="images/portfolio/3.jpg"><i class="fa fa-search"></i></a></li>
 									<li><a href=""><i class="fa fa-link"></i></a></li>
 								</ul>
 							</li>
 							
 							<li class="portfolio-item">
-								<img src="images/portfolio/item4.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry.">
+								<img src="images/portfolio/4.jpg" class="img-responsive" alt="ICGC world wide">
 								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+									<h3>ICGC World wide</h3>
+									<p>When the glory of the Lord comes upon you, no devil can touch you and no man can oppose you. </p>
 								</figcaption>
 								<ul class="external">
-									<li><a class="fancybox" title="Wall street 4" data-fancybox-group="works" href="images/portfolio/item4.jpg"><i class="fa fa-search"></i></a></li>
+									<li><a class="fancybox" title="ICGC world wide" data-fancybox-group="works" href="images/portfolio/4.jpg"><i class="fa fa-search"></i></a></li>
 									<li><a href=""><i class="fa fa-link"></i></a></li>
 								</ul>
 							</li>
 							
 							<li class="portfolio-item">
-								<img src="images/portfolio/item5.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+								<img src="images/portfolio/5.jpg" class="img-responsive" alt="Let's get talking with Lady Joi Otabil">
 								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+									<h3>Event 1</h3>
+									<p>Lets get talking with Lady Joi Otabil.</p>
 								</figcaption>
 								<ul class="external">
-									<li><a class="fancybox" title="Wall street 5" data-fancybox-group="works" href="images/portfolio/item5.jpg"><i class="fa fa-search"></i></a></li>
+									<li><a class="fancybox" title="Event 1" data-fancybox-group="works" href="images/portfolio/5.jpg"><i class="fa fa-search"></i></a></li>
 									<li><a href=""><i class="fa fa-link"></i></a></li>
 								</ul>
 							</li>
 							
 							<li class="portfolio-item">
-								<img src="images/portfolio/item6.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+								<img src="images/portfolio/6.jpg" class="img-responsive" alt="Let's get talking with Joi. ">
 								<figcaption class="mask">
-									<h3>Wall street</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+									<h3>Event 2</h3>
+									<p>Let's get talking with Joi.</p>
 								</figcaption>
 								<ul class="external">
-									<li><a class="fancybox" title="Wall street 6" data-fancybox-group="works" href="images/portfolio/item6.jpg"><i class="fa fa-search"></i></a></li>
+									<li><a class="fancybox" title="Events" data-fancybox-group="works" href="images/portfolio/6.jpg"><i class="fa fa-search"></i></a></li>
 									<li><a href=""><i class="fa fa-link"></i></a></li>
 								</ul>
 							</li>
@@ -482,7 +469,7 @@
 									if (strlen($full_name)>25 || strlen($e_mail)>50 || strlen($subject)> 100 || strlen($message)>150){
 									echo 'Sorry, maxlength for some fields has been exceeded.';
 									} else {
-							 		$to = 'mintahkwabena13@gmail.com';
+							 		$to = 'icgc@centralgospel.com';
 							 		$subject = '';
 							 		$body = $full_name."\n".$message;
 							 		$headers = 'From: '.$e_mail;
@@ -539,18 +526,6 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="footer-content">
-						<div class="wow animated fadeInDown">
-							<p>Sermons signup</p>
-							<p>Get our weekly Sermons here!!!</p>
-						</div>
-						<form action="#" method="post" class="subscribe-form wow animated fadeInUp">
-							<div class="input-field">
-								<input type="email" class="subscribe form-control" placeholder="Enter Your Email...">
-								<button type="submit" class="submit-icon">
-									<i class="fa fa-paper-plane fa-lg"></i>
-								</button>
-							</div>
-						</form>
 						<p>Design And developed By <small>Micheal and Dorcas</small>. All rights Reserved</p>
 					</div>
 				</div>
